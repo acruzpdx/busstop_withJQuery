@@ -1,0 +1,147 @@
+/*------------------------------------------------------------------*
+ * File: 		bus.css
+ * Author: 		Agapito Cruz (agapito.cruz@gmail.com)
+ * Comments:	This file was written to demonstrate proficiency
+ * 				with CSS.
+ * 				This is one of three files needed to access Trimet
+ * 				data. The other three are: bus.js and
+ * 				index.html.
+ ------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------*
+ * G L O B A L 
+ ------------------------------------------------------------------*/
+body,section,form,input,label,h1,h2,h3,h4,h5,h6,p,ul,ol,li {
+	margin:0;
+	padding:0;
+	font-family:  Tahoma, sans-serif;
+	font-size:1vw;
+}
+.shown {
+	display:block;
+}
+.not_shown {
+	display:none;
+}
+h1 {
+	text-align:center;
+	font-size:3vw;
+}
+/*------------------------------------------------------------------*
+ * T A B S
+ ------------------------------------------------------------------*/
+#arrivals,#trip {
+	display:block;
+	height:2em;
+	width:10%;
+	float:left;
+	margin-left:2%;
+	padding-top:0.5%;
+	font-size:1vw;
+	text-decoration:none;
+	text-align:center;
+}
+#arrivals {
+	background: rgb(79, 157, 103);
+}
+#trip {
+	background: rgb(16, 94, 40);
+}
+a#arrivals:hover, #trip:hover {
+	color:yellow;
+}
+#arrivals.fore, #trip.fore {
+	color:white;
+}
+#arrivals.back, #trip.back {
+	color:black;
+}
+
+
+/*------------------------------------------------------------------*
+ * H E A D E R 
+ ------------------------------------------------------------------*/
+header {
+	clear:both;
+}
+header h1 {
+	text-align: center;
+	font-size:2vw;
+}
+
+/*------------------------------------------------------------------*
+ * A R R I V A L S - M A I N  S E C T I O N
+ ------------------------------------------------------------------*/
+#arrivals-main {
+	background: rgb(79, 157, 103);
+	clear:both;
+}
+#arrivals-main form {
+	padding-top:2%;
+	margin-top:1%;
+}
+#arrivals-main label {
+	padding-top:1%;
+	margin-left:1%;
+}
+#arrivals-main #stopID {
+	margin-bottom:1%;
+	margin-left:1%;
+	padding:0;
+	background:white;
+}
+#arrivals-main #stopID:focus {
+	background:khaki;
+}
+/*------------------------------------------------------------------*
+ * T R I P - M A I N  S E C T I O N
+ ------------------------------------------------------------------*/
+#trip-main {
+	clear:both;
+	background: rgb(16, 94, 40);
+}
+#trip-main form {
+	padding-top:2%;
+	margin-top:1%;
+}
+#trip-main label {
+	padding-top:1%;
+	margin-left:1%;
+}
+#trip-main #start_address, #trip-main #end_address {
+	margin-bottom:1%;
+	margin-left:1%;
+	padding:0;
+	background:white;
+}
+#trip-main #start_address:focus, #trip-main #end_address:focus {
+	background:khaki;
+}
+#trip-main button {
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:1%;
+}
+
+/*------------------------------------------------------------------*
+ * T R I P _ D A T A  S E C T I O N
+ ------------------------------------------------------------------*/
+#trip_data {
+	/* margin-top:2% */
+}
+
+/*------------------------------------------------------------------*
+ * F O O T E R
+ ------------------------------------------------------------------*/
+footer {
+	padding:0;
+	margin:0;
+
+	clear:both;
+	background:rgb(0, 63, 19);
+}
+footer p {
+	font-size:.75em;
+	font-variant:italic;
+	color:white;
+}	

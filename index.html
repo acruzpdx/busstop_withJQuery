@@ -1,0 +1,57 @@
+<!------------------------------------------------------------------*
+ * File: 		index.html
+ * Author: 		Agapito Cruz (agapito.cruz@gmail.com)
+ * Contents: 	
+ * Comments:	This file was written to demonstrate proficiency
+ * 				in the use of HTML, including the use of the new
+ *				HTML5 structure tags.
+ * 				This is one of three files needed to access Trimet
+ * 				data. The other three are: bus.js and
+ * 				bus.css.
+ ----------------------------------------------------------------- -->
+<!doctype html>
+<html lang="eng us">
+	<head>
+	<meta charset="utf-8">
+	<title>Bus Stop</title>
+	<link rel="stylesheet" href="bus.css">
+	</head>
+<body>
+	<h1>BUS STOP</h1>
+	<a id="arrivals" class="fore" href="#">Arrivals</a>
+	<a id="trip" class="back" href="#">Trip Planner</a>
+	<section id="arrivals-main" class="shown">
+		<form>
+			<label for="stopID">Please enter bus stop ID#:</label>
+			<br />
+			<input type="text" id="stopID" maxlength="5" size="10" >
+			<button id="getArrivalsButton">Get Arrivals</button>
+			<button id="arrivalsResetButton">Reset</button>
+		</form>
+		<section id="arrival_data">
+		</section>
+	</section>
+	<section id="trip-main" class="not_shown">
+		<form>
+			<label for="start_address">Please Enter Starting street address:</label>
+			<br />
+			<input type="text" id="start_address" maxlength="80" size="100" >
+			<br />
+			<label for="end_address">Please Enter Ending street address:</label>
+			<br />
+			<input type="text" id="end_address" maxlength="80" size="100" >
+			<br />
+			<button id="getTripButton">Get Trip</button>
+			<button id="tripResetButton">Reset</button>
+		</form>
+		<section id="trip_data">
+		</section>
+	</section>
+	<footer>
+		<p>All information displayed is provided by Trimet on an as-is basis.</p>
+	</footer>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="bus.js"></script>
+</body>
+</html>
+
